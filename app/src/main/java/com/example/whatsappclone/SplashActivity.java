@@ -5,13 +5,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ContactsAdapter contactsAdapter;
 
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position, Contact contact) {
                 Log.e("pos",""+position);
-                Toast.makeText(MainActivity.this,contact.getName(),Toast.LENGTH_LONG).show();
+                Toast.makeText(SplashActivity.this,contact.getName(),Toast.LENGTH_LONG).show();
             }
         });
 
